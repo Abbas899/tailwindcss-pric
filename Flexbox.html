@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    flex: {
+                        '1/4': '1 1 25%',
+                        '1/3': '1 1 33%',
+                        '1/2': '1 1 50%',
+                        '1/1': '1 1 100%',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="min-h-screen">
+        <nav class="h-[80px] flex items-center justify-center bg-black text-white cursor-pointer">
+            <i class="material-icons ml-2 hover:color-red-500">arrow_back</i>
+            <a class="" href="/index.html"> Back </a>
+        </nav>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+        <div class="h-80 bg-gray-300 flex flex-col justify-between items-center  ">
+            <div class="p-4 bg-red-400">block1</div>
+            <div class="p-4 bg-green-400 text-5xl">block2</div>
+            <div class="p-4 bg-blue-400">block3 </div>
+            <div class="p-4 bg-yellow-400">block4 </div>
+        </div>
+        <div class="h-80 mt-24 bg-gray-200 flex flex-wrap justify-between items-center  ">
+            <div class="p-4 bg-red-400">block1 red in color red in colorred in color red in color ffdss red in colorred
+                in color.</div>
+            <div class="p-4 bg-green-400 text-5xl">block2 red in color</div>
+            <div class="p-4 bg-yellow-400"> block3 red in</div>
+            <div class="p-4 bg-blue-400">block3 red in</div>
+        </div>
+        <div class="h-[280px] flex flex-nowrap justify-between items-start ">
+            <div class="bg-blue-400">item1</div>
+            <!-- <div class="bg-gray-200 ">item2</div> -->
+            <div class="bg-green-400 self-center w-[200px]">item3</div>
+            <div class="bg-yellow-400">item4 Lorem, ipsum dolor</div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="rounded-full h-20 w-20 bg-blue-400 flex-shrink-0 items-center justify-center flex">item1</div>
+        <div class="ml-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laborum assumenda quod eius
+            consectetur, enim ipsa consequatur tempora minus maiores tempore, aspernatur nobis doloribus hic. Ducimus
+            mollitia amet itaque quia.</div>
+    </div>
+
+    <!-- Flex columns  -->
+
+    <div class="flex flex-wrap gap-1">
+        <div class="bg-blue-400 flex-1/1 sm:flex-1/2 md:flex-1/3 text-justify p-4">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Fuga impedit, rem suscipit aut, rerum atque animi voluptatem deleniti, tempore
+            blanditiis voluptates modi eius reiciendis.</div>
+        <div class="bg-gray-300 flex-1/1 sm:flex-1/2 md:flex-1/3 text-justify p-4">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Vel consectetur obcaecati sint consequatur nostrum! Odio, quas
+            necessitatibus, esse consectetur sunt atque porro sapiente delectus tenetur commodi cupiditate cumque,
+            incidunt laboriosam?</div>
+        <div class="bg-red-400 flex-1/1 sm:flex-1/2 md:flex-1/3 text-center p-4">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Vel consectetur obcaecati sint consequatur nostrum!</div>
+    </div>
+</body>
+
+</html>
